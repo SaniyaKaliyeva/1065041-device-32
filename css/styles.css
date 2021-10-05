@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button {
+    font-family: inherit;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* index.html */
+
+/* Header */
+
+.page-header {
+    color: #000000;
+    background-color: #FFE17F;
+}
+
+.navigation-link {
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation-user .navigation-link {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+/* Slider */
+
+.slider-number {
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    font-size: 180px;
+    color: #FFFFFF;
+    background-color: #FFE17F;
+}
+
+.slider-text {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.slider-description {
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+}
+
+.slider-characteristics-name {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+.slider-characteristics-range {
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+}
+
+/* Categories */
+
+.categories-link {
+    line-height: 24px;
+    font-weight: 800;
+    text-align: center;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Services */
+
+.delivery-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.delivery-text {
+    font-family: "Rubik", sans-serif;
+}
+
+/* About company */
+
+.company-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #F0F0F0;
+}
+
+.about-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.about-text {
+    font-family: "Rubik", sans-serif;
+}
+
+.contacts-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.contacts-text {
+    font-family: "Rubik", sans-serif;
+}
+
+.about-name {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.contacts-subtitle {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contacts-address-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.contacts-address-phone {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.contacts-schedule-item {
+    font-family: "Rubik", sans-serif;
+}
+
+/* Newsletter */
+
+.newsletter {
+    background-color: #F0F0F0;
+}
+
+.newsletter-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.newsletter-text {
+    font-family: "Rubik", sans-serif;
+}
+
+.control-span {
+    font-family: "Rubik", sans-serif;
+}
+
+/* Footer */
+
+.page-footer {
+    color: #FFFFFF;
+    background-color: #444444;
+}
+
+.footer-address-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.phone-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.footer-phone-number {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+/* catalog.html */
+
+/* Main */
+
+.inner-header-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.breadcrumbs-link {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+/* Filter */
+
+.catalog-filter {
+    background: #EBEBEB;
+}
+
+.catalog-filter-title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.catalog-filter-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.control-label {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Sorting */
+
+.product-card-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.product-card-price {
+    font-family: "Rubik", sans-serif;
+    line-height: 21px;
+    color: #444444;
+}
+
+/* Pagination */
+
+.pagination-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pagintation-prev {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.pagintation-next {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.pagintation-number {
+    font-family: "Rubik", sans-serif;
+    color: #444444;
+    opacity: 0.3;
+}

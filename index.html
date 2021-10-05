@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Device</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <!-- Шапка -->
   <header class="page-header">
     <a class="page-header-link">
       <img class="page-header-logo" alt="Логотип Device" src="images/header-logo.svg" width="145" height="36">
@@ -58,6 +60,7 @@
   </header>
 
   <main class="main-index">
+    <!-- Слайдер -->
     <section class="gallery">
       <h2 class="visually-hidden">Слайдер</h2>
       <img class="slider-image" src="images/slider-1.jpg" alt="Товары" width="560" height="560">
@@ -95,16 +98,17 @@
       </ol>
       <ul class="slider-characteristics">
         <li class="slider-characteristics-item">
-          <b class="slider-characteristics-range">800 м</b>
+          <p class="slider-characteristics-range">800 м</p>
           <p class="slider-characteristics-name">Дальность полета</p>
         </li>
         <li class="slider-characteristics-item">
-          <b class="slider-characteristics-range">50 м</b>
+          <p class="slider-characteristics-range">50 м</p>
           <p class="slider-characteristics-name">Радиус поражения</p>
         </li>
       </ul>
     </section>
 
+    <!-- Категории -->
     <section class="categories">
       <h2 class="visually-hidden">Категории</h2>
       <ul class="categories-list">
@@ -147,6 +151,7 @@
       </ul>
     </section>
 
+    <!-- Услуги -->
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
@@ -170,11 +175,13 @@
       </div>
     </section>
 
+    <!-- О компании -->
     <section class="company">
       <h2 class="company-title">Доставим редкий товар под заказ</h2>
       <button class="info" type="button">
         <span>Дополнительная информация</span>
       </button>
+
       <section class="about">
         <h2 class="about-title">О нас</h2>
         <p class="about-text">Огромный выбор гаджетов не оставит равнодушным
@@ -184,13 +191,13 @@
 
         <ul class="about-list">
           <li class="about-item">
-            <b class="about-name">Меловые линии</b>
+            <p class="about-name">Меловые линии</p>
           </li>
           <li class="about-item">
-            <b class="about-name">СДИК</b>
+            <p class="about-name">СДИК</p>
           </li>
           <li class="about-item">
-            <b class="about-name">ТоксБерри</b>
+            <p class="about-name">ТоксБерри</p>
           </li>
         </ul>
 
@@ -199,7 +206,7 @@
 
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис.
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
           Заодно, сможете проверить работоспособность покупки.</p>
 
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -218,6 +225,7 @@
       </section>
     </section>
 
+    <!-- Рассылка -->
     <section class="newsletter">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
@@ -233,12 +241,13 @@
         <label class="control">
           <input class="visually-hidden control-input" type="checkbox" name="newsletter-free">
           <span class="control-mark"></span>
-          <span class="control-label">Это бесплатно</span>
+          <span class="control-span">Это бесплатно</span>
         </label>
       </form>
     </section>
   </main>
 
+  <!-- Подвал -->
   <footer class="page-footer">
     <section class="footer-address">
       <h2 class="visually-hidden">Контакты</h2>
@@ -289,7 +298,9 @@
           <a class="footer-phone-number" href="tel:88128121212">+7(812)812-12-12</a>
         </p>
       </address>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="htmlacademy-logo" alt="Htmlacademy" src="">
+      </a>
     </section>
   </footer>
 </body>
