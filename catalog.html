@@ -149,21 +149,23 @@
 
     <!-- Сортировка -->
     <section class="catalog-sorting">
-      <h2 class="catalog-sorting-title">Сортировка:</h2>
-      <form class="catalog-sorting-form">
-        <select class="select-control" id="sorting" name="sorting">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-      </form>
-      <a class="button-up" href="#">
-        <span class="visually-hidden">Вверх </span>
-      </a>
-      <a class="button-down" href="#">
-        <span class="visually-hidden">Вниз </span>
-      </a>
+      <div class="sorting-container">
+        <h2 class="catalog-sorting-title">Сортировка:</h2>
+        <form class="catalog-sorting-form">
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+        </form>
+        <a class="button-up" href="#">
+          <span class="visually-hidden">Вверх </span>
+        </a>
+        <a class="button-down" href="#">
+          <span class="visually-hidden">Вниз </span>
+        </a>
+      </div>
 
       <ul class="product-list">
         <li class="product-card">

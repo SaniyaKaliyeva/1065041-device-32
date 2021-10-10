@@ -30,7 +30,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -53,8 +61,22 @@ body {
 /* Header */
 
 .page-header {
+    background: #FFFFFF;
+}
+
+.header-container {
+    width: 1160px;
+    margin: 0 auto;
     color: #000000;
     background-color: #FFE17F;
+}
+
+.navigation-user {
+    display: flex;
+    justify-content: space-between;
+    width: 1075px;
+    margin-left: 60px;
+    margin-right: 25px;
 }
 
 .navigation-link {
@@ -65,6 +87,8 @@ body {
     background-color: inherit;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-user .navigation-link {
@@ -75,12 +99,45 @@ body {
     text-transform: none;
 }
 
+.navigation-main {
+    display: flex;
+    justify-content: space-between;
+    width: 1041px;
+    margin-left: 60px;
+    margin-right: 59px;
+}
+
 /* Slider */
+
+.main-container {
+    flex-grow: 1;
+}
+
+.slider-container {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery {
+    width: 560px;
+}
+
+.advantages {
+    width: 560px;
+}
+
+.slider-pagination, .slider-characteristics {
+    margin: 0;
+    padding: 0;
+}
 
 .slider-number {
     font-family: "Rubik", sans-serif;
     font-weight: 800;
     font-size: 180px;
+    line-height: 30px;
     color: #FFFFFF;
     background-color: #FFE17F;
 }
@@ -94,19 +151,34 @@ body {
 .slider-description {
     font-family: "Rubik", sans-serif;
     font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .slider-characteristics-name {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
+    line-height: 30px;
 }
 
 .slider-characteristics-range {
     font-family: "Rubik", sans-serif;
     font-size: 36px;
+    line-height: 30px;
 }
 
 /* Categories */
+.categories {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
 
 .categories-link {
     line-height: 24px;
@@ -120,6 +192,27 @@ body {
 
 /* Services */
 
+.services {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.services-container {
+    display: flex;
+    background: #EBEBEB;
+}
+
+.services-list {
+    width: 280px;
+    margin: 0;
+    padding: 0;
+    margin-left: 140px;
+}
+
+.delivery {
+    width: 1020px;
+}
+
 .delivery-title {
     font-weight: 800;
     font-size: 50px;
@@ -128,9 +221,20 @@ body {
 
 .delivery-text {
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 /* About company */
+
+.company {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.company-title-container {
+    background: #EBEBEB;
+}
 
 .company-title {
     font-weight: 800;
@@ -141,6 +245,15 @@ body {
     background-color: #F0F0F0;
 }
 
+.company-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 560px;
+}
+
 .about-title {
     font-weight: 800;
     font-size: 50px;
@@ -149,6 +262,17 @@ body {
 
 .about-text {
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-list {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {
+    width: 560px;
 }
 
 .contacts-title {
@@ -159,6 +283,8 @@ body {
 
 .contacts-text {
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .about-name {
@@ -187,11 +313,26 @@ body {
     color: #000000;
 }
 
+.contacts-schedule {
+    margin: 0;
+    padding: 0;
+}
+
 .contacts-schedule-item {
     font-family: "Rubik", sans-serif;
 }
 
 /* Newsletter */
+
+.newsletter {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.newsletter-container {
+    width: 1160px;
+    margin: 0 auto;
+}
 
 .newsletter {
     background-color: #F0F0F0;
@@ -205,17 +346,34 @@ body {
 
 .newsletter-text {
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
 }
 
-.control-span {
+.newsletter-free-span {
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 /* Footer */
 
 .page-footer {
+    width: 1440px;
+    margin: 0 auto;
     color: #FFFFFF;
     background-color: #444444;
+}
+
+.footer-container {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-address {
+    width: 240px;
 }
 
 .footer-address-text {
@@ -229,6 +387,10 @@ body {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-size: 16px;
+}
+
+.footer-phone {
+    width: 300px;
 }
 
 .footer-phone-number {
@@ -285,6 +447,10 @@ body {
 
 /* Sorting */
 
+.sorting-container {
+    background: #EBEBEB;
+}
+
 .product-card-title {
     font-family: "Rubik", sans-serif;
     font-weight: bold;
@@ -298,6 +464,10 @@ body {
 }
 
 /* Pagination */
+
+.pagination {
+    background: #EBEBEB;
+}
 
 .pagination-link {
     text-decoration: none;
@@ -317,6 +487,8 @@ body {
 
 .pagintation-number {
     font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
     color: #444444;
     opacity: 0.3;
 }
