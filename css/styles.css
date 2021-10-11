@@ -193,13 +193,10 @@ body {
 /* Services */
 
 .services {
-    width: 1440px;
-    margin: 0 auto;
-}
-
-.services-container {
     display: flex;
     background: #EBEBEB;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .services-list {
@@ -406,6 +403,11 @@ body {
 
 /* Main */
 
+.inner-header {
+    width: 1160px;
+    margin: 0 auto;
+}
+
 .inner-header-title {
     font-weight: 800;
     font-size: 50px;
@@ -420,9 +422,16 @@ body {
     opacity: 0.6;
 }
 
+.catalog-products {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
 /* Filter */
 
 .catalog-filter {
+    width: 468px;
     background: #EBEBEB;
 }
 
@@ -446,6 +455,10 @@ body {
 }
 
 /* Sorting */
+
+.catalog-right-column {
+    width: 972px;
+}
 
 .sorting-container {
     background: #EBEBEB;
