@@ -15,29 +15,19 @@
         <img class="page-header-logo" alt="Логотип Device" src="images/header-logo.svg" width="145" height="36">
       </a>
 
-      <nav class="navigation-user">
-        <form class="navigation-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="navigation-search-label">
-            <input class="navigation-search-input" type="text" name="navigation-search" placeholder="Поиск по сайту">
+      <div class="header-top">
+        <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="header-search-label">
+            <input class="header-search-input" type="text" name="search" placeholder="Поиск по сайту">
           </label>
-          <button class="button" type="submit">
-            <span class="visually-hidden">Отправить</span>
-          </button>
         </form>
 
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <span class="navigation-basket">2</span>
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+        <a class="header-login" href="#">Войти</a>
+        <a class="header-compare" href="#">Сравнить</a>
+        <a class="header-basket" href="#">
+          <span class="navigation-basket">2</span>
+          Корзина</a>
+      </div>
 
       <nav class="navigation-main">
         <div class="navigation-catalog">
@@ -82,24 +72,26 @@
         <p class="slider-text">Порхает как бабочка, жалит как пчела!</p>
         <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
           лазером, замаскированным под стандартную камеру.</p>
-        <a class="button" href="#">Подробнее</a>
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-current">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
+        <div class="advantages-pagination">
+          <a class="button" href="#">Подробнее</a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-current">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
         <ul class="slider-characteristics">
           <li class="slider-characteristics-item">
             <p class="slider-characteristics-range">800 м</p>
@@ -119,39 +111,39 @@
       <ul class="categories-list">
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <img class="categories-image" src="" alt="">
-            <b>Виртуальная реальность</b>
+            <img class="categories-image" src="./images/categories/reality.svg" alt="" width="97" height="55">
           </a>
+          <p class="categories-title">Виртуальная реальность</p>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <img class="categories-image" src="" alt="">
-            <b>Моноподы для селфи</b>
+            <img class="categories-image" src="./images/categories/monopod.svg" alt="" width="86" height="117">
           </a>
+          <p class="categories-title">Моноподы для селфи</p>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <img class="categories-image" src="" alt="">
-            <b>Экшн-камеры</b>
+            <img class="categories-image" src="./images/categories/camera.svg" alt="" width="71" height="87">
           </a>
+          <p class="categories-title">Экшн-камеры</p>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <img class="categories-image" src="" alt="">
-            <b>Фитнес-браслеты</b>
+            <img class="categories-image" src="./images/categories/bracelet.svg" alt="" width="107" height="65">
           </a>
+          <p class="categories-title">Фитнес-браслеты</p>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <img class="categories-image" src="" alt="">
-            <b>Умные часы</b>
+            <img class="categories-image" src="./images/categories/watch.svg" alt="" width="56" height="98">
           </a>
+          <p class="categories-title">Умные часы</p>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="#">
-            <img class="categories-image" src="" alt="">
-            <b>Квадрокоптеры</b>
+            <img class="categories-image" src="./images/categories/quadcopter.svg" alt="" width="132" height="69">
           </a>
+          <p class="categories-title">Квадрокоптеры</p>
         </li>
       </ul>
     </section>
@@ -174,16 +166,19 @@
 
       <div class="delivery">
         <h2 class="delivery-title">Доставка</h2>
-        <img class="delivery-image" src="" alt="Доставка">
         <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <img class="delivery-image" src="./images/delivery.svg" alt="Доставка" width="136" height="164">
       </div>
     </section>
 
     <!-- О компании -->
     <section class="company">
       <div class="company-title-container">
+        <div class="company-image-container">
+          <img class="company-image" src="./images/order.svg" alt="Заказ" width="47" height="31">
+        </div>
         <h2 class="company-title">Доставим редкий товар под заказ</h2>
         <button class="info" type="button">
           <span>Дополнительная информация</span>

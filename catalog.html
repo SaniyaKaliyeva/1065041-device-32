@@ -18,12 +18,15 @@
 
       <nav class="navigation-user">
         <form class="navigation-form" action="https://echo.htmlacademy.ru" method="post">
+          <a class="navigation-search-icon" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
           <label class="navigation-search-label">
             <input class="navigation-search-input" type="text" name="navigation-search" placeholder="Поиск по сайту">
           </label>
-          <button class="button" type="submit">
+          <a class="button" type="submit">
             <span class="visually-hidden">Отправить</span>
-          </button>
+          </a>
         </form>
 
         <ul class="navigation-list">
@@ -38,12 +41,15 @@
           </li>
           <li class="navigation-item">
             <span class="navigation-basket">2</span>
+            <a class="navigation-basket-icon" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
 
-      <nav class="navigation">
+      <nav class="navigation-main">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
@@ -87,7 +93,7 @@
         <h2 class="catalog-filter-title">Фильтр:</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость</legend>
+            <legend class="catalog-filter-subtitle">Стоимость</legend>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену</span>
             </button>
@@ -104,7 +110,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
+            <legend class="catalog-filter-subtitle">Цвет</legend>
             <label class="catalog-filter-item">
               <input class="visually-hidden control-input" type="checkbox" name="black" checked>
               <span class="control-mark"></span>
@@ -133,7 +139,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-subtitle">Bluetooth</legend>
             <label class="control">
               <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
               <span class="control-mark"></span>
