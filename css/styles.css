@@ -87,7 +87,9 @@ body {
 
 .header-top {
     display: flex;
-    width: 1075px;
+    flex-wrap: wrap;
+    width: 1041px;
+    min-height: 20px;
     margin-left: 60px;
     margin-right: 25px;
     margin-bottom: 29px;
@@ -116,15 +118,20 @@ body {
 }
 
 .header-compare {
-    margin-left: 19px;
+    margin-left: 41px;
+    min-width: 120px;
 }
 
 .header-basket {
     margin-left: 14px;
+    min-width: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation-main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1041px;
     margin-left: 60px;
@@ -133,11 +140,14 @@ body {
 
 .navigation-catalog {
     display: flex;
+    width: 516px;
+    margin-right: 24px;
 }
 
 .navigation-list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -153,12 +163,21 @@ body {
     display: block;
 }
 
+.delivery-link {
+    width: 140px;
+    text-align: start;
+}
+
 .garanty-link {
     margin-left: 19px;
+    width: 140px;
+    text-align: start;
 }
 
 .contacts-link {
     margin-left: 62px;
+    width: 140px;
+    text-align: end;
 }
 
 /* Slider */
@@ -173,7 +192,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to top, #FFFFFF 75%, #FFE17F 25%);
-    margin-bottom: 69px;
+    margin-bottom: 70px;
 }
 
 .gallery {
@@ -199,7 +218,7 @@ body {
 .slider-number {
     display: flex;
     justify-content: flex-end;
-    padding-right: 49px;
+    padding-right: 39px;
     padding-top: 55px;
     font-family: "Rubik", sans-serif;
     font-weight: 800;
@@ -222,6 +241,7 @@ body {
     line-height: 30px;
     margin: 0;
     margin-bottom: 30px;
+    color: #444444;
 }
 
 .advantages-pagination {
@@ -244,6 +264,7 @@ body {
 
 .slider-characteristics-name {
     margin: 0;
+    color: #444444;
 }
 
 .slider-characteristics-name {
@@ -263,6 +284,7 @@ body {
 .categories {
     width: 1160px;
     margin: 0 auto;
+    margin-bottom: 69px;
 }
 
 .categories-list {
@@ -357,6 +379,7 @@ body {
     line-height: 30px;
     padding-left: 120px;
     width: 497px;
+    color: #444444;
 }
 
 /* About company */
@@ -423,6 +446,7 @@ body {
     line-height: 30px;
     margin: 0;
     margin-bottom: 23px;
+    color: #444444;
 }
 
 .about-list {
@@ -445,6 +469,7 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    color: #444444;
 }
 
 .about-name {
@@ -463,6 +488,7 @@ body {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
+    color: #444444;
 }
 
 .contacts-address-phone {
@@ -481,6 +507,7 @@ body {
 
 .contacts-schedule-item {
     font-family: "Rubik", sans-serif;
+    color: #444444;
 }
 
 /* Newsletter */
@@ -489,40 +516,54 @@ body {
     width: 1440px;
     margin: 0 auto;
     background-color: #F0F0F0;
+    margin-bottom: 0;
 }
 
 .newsletter-container {
     width: 1160px;
     margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 134px;
 }
 
 .newsletter-block {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .newsletter-title {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    margin: 0; 
-    padding-top: 75px;
+    margin: 0;
+    width: 560px;
 }
 
 .newsletter-text {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 86px;
+    color: #444444;
+    margin: 0;
+    width: 560px;
 }
 
 .newsletter-form {
     display: flex;
 }
 
+.newsletter-email {
+    margin: 0;
+    width: 601px;
+}
+
 .newsletter-free-span {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    color: #444444;
+    margin-right: 0;
 }
 
 /* Footer */
@@ -539,10 +580,16 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-top: 62px;
+    padding-bottom: 61px;
 }
 
 .footer-address {
     width: 240px;
+}
+
+.page-footer-logo {
+    padding-bottom: 35px;
 }
 
 .footer-address-text {
@@ -550,12 +597,51 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
+    margin: 0;
+}
+
+.footer-social {
+    width: 458px;
+    padding-top: 80px;
+}
+
+.footer-social-name {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 63px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-social-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.footer-phone {
+    width: 293px;
+    padding-top: 80px;
 }
 
 .phone-text {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-size: 16px;
+    margin: 0;
+    padding-bottom: 53px;
 }
 
 .footer-phone {
@@ -576,7 +662,7 @@ body {
 /* Main */
 
 .main-inner {
-    margin-top: 37px;
+    padding-top: 37px;
 }
 
 .inner-header {
@@ -608,6 +694,7 @@ body {
     line-height: 19px;
     color: #000000;
     opacity: 0.6;
+    margin-right: 36px;
 }
 
 .catalog-products {
@@ -656,8 +743,8 @@ body {
 
 .sorting-container {
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 140px 25px 72px;
+    background: #EBEBEB;
 }
 
 .catalog-sorting-title {
@@ -668,12 +755,30 @@ body {
     text-transform: uppercase;
 }
 
+.catalog-sorting-form {
+    margin-right: auto;
+}
+
 .catalog-right-column {
     width: 972px;
 }
 
-.sorting-container {
-    background: #EBEBEB;
+.sorting-button {
+    width: 11px;
+    height: 10px;
+}
+
+.product-container {
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 69px;
+    padding-bottom: 51px;
+}
+
+.product-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .product-card-title {
@@ -696,9 +801,14 @@ body {
     padding: 0;
     list-style-type: none;
     display: flex;
+    width: 760px;
+    margin: 0 auto;
+    margin-bottom: 77px;
 }
 
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
@@ -707,11 +817,13 @@ body {
 .pagintation-prev {
     color: #000000;
     text-transform: uppercase;
+    margin-right: auto;
 }
 
 .pagintation-next {
     color: #000000;
     text-transform: uppercase;
+    margin-left: auto;
 }
 
 .pagintation-number {
