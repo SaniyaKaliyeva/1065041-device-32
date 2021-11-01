@@ -913,6 +913,7 @@ body {
 
 .sorting-container {
     display: flex;
+    align-items: center;
     padding: 25px 140px 25px 72px;
     background: #EBEBEB;
 }
@@ -923,10 +924,21 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    margin-right: 50px;
 }
 
 .catalog-sorting-form {
     margin-right: auto;
+}
+
+.select-control {
+    border: none;
+    background-color: #EBEBEB;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .catalog-right-column {
@@ -936,6 +948,23 @@ body {
 .sorting-button {
     width: 11px;
     height: 10px;
+}
+
+.button-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 11px solid #DCDCDC;
+}
+
+.button-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 11px solid #000000;
+    margin-left: 19px;
 }
 
 /* Product-list */
@@ -1017,7 +1046,8 @@ body {
 }
 
 .pagination-item {
-    padding: 25px 30px;
+    padding-top: 27px;
+    padding-bottom: 24px;
 }
 
 .pagination-link {
