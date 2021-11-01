@@ -126,8 +126,9 @@ body {
     margin-right: 24px;
 }
 
-.header-form:focus {
-    border: 2px solid #af4fff;
+.header-link:focus, .navigation-link:focus {
+    outline: 2px solid #af4fff;
+    border-radius: 10px;
 }
 
 .header-link {
