@@ -137,9 +137,23 @@ body {
     color: #000000;
 }
 
-.header-link:focus, .navigation-link:focus {
+.header-form:focus-within,
+.header-link:focus, 
+.navigation-link:focus {
     outline: 2px solid #af4fff;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.header-form:active {
+    outline: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.header-search:focus,
+.header-search-input:focus,
+.header-search-button:focus {
+    outline: none;
 }
 
 .header-search {
@@ -157,25 +171,11 @@ body {
     opacity: 0.3;
 }
 
-.header-search-input:hover {
-    color: #000000;
-    opacity: 0.6;
-}
-
-.header-search-input:focus {
-    outline: 2px solid #af4fff;
-    border-radius: 10px;
-}
-
-.header-search-input:active {
-    outline: 2px solid #000000;
-    border-radius: 10px;
-}
-
 .header-search-button {
     /* visibility: hidden; */
     width: 160px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .header-search-button:hover {
@@ -465,6 +465,12 @@ body {
 
 .categories-link:active {
     background: #FFC700;
+    outline: none;
+    color: #dcdcdc;
+}
+
+.categories-title:active {
+    color: #dcdcdc;
 }
 
 /* Services */
@@ -539,8 +545,7 @@ body {
     color: #444444;
 }
 
-.delivery, .services-current-button {
-    background-image: none;
+.services-item:active {
     background-color: #000000;
     color: #FFE17F;
 }
@@ -558,6 +563,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 97px;
+}
+
+.company-title-container:focus {
+    outline: 5px solid #AF4FFF;
+}
+
+.company-image-container:hover {
+    background: #FFC700;
 }
 
 .company-image-container {
@@ -675,6 +688,10 @@ body {
     color: #000000;
 }
 
+.contacts-address-phone:focus {
+    outline: none;
+}
+
 .contacts-schedule {
     margin: 0;
     padding: 0;
@@ -744,11 +761,34 @@ body {
 }
 
 .newsletter-button {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     background: #F0F0F0;
     color: #000000;
     border: 3px solid #dcdcdc;
     padding: 17px 20px;
     margin-right: auto;
+}
+
+.newsletter-button:focus {
+    border: 3px solid #AF4FFF;
+    outline: none;
+}
+
+.newsletter-button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+.newsletter-button:active {
+    background-color: #000000;
+    color: #444444;
+    border: 3px solid #000000;
+    outline: none;
 }
 
 .newsletter-free {
@@ -819,6 +859,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 63px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .footer-social-list {
@@ -835,6 +881,10 @@ body {
     height: 40px;
     margin-right: 15px;
     margin-bottom: 15px;
+}
+
+.circle-button:focus {
+    outline: 5px solid #AF4FFF;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -854,6 +904,15 @@ body {
     padding-bottom: 53px;
 }
 
+.phone-text:focus-within {
+    border: 2px solid #AF4FFF;
+    border-radius: 25px;
+}
+
+.footer-phone-number:focus {
+    outline: none;
+}
+
 .footer-phone {
     display: flex;
     flex-direction: column;
@@ -868,6 +927,19 @@ body {
     text-decoration: none;
     text-decoration-line: underline;
     color: #FFFFFF;
+}
+
+.htmlacademy-link:focus {
+    outline: 2px solid #AF4FFF;
+    border-radius: 10px;
+}
+
+.htmlacademy-link:hover svg {
+    fill: #FFFFFF;
+}
+
+.htmlacademy-link:active {
+    outline: none;
 }
 
 /* catalog.html */
@@ -1041,6 +1113,10 @@ body {
     grid-column: 1 / -1;
 }
 
+.product-card-image-link:focus {
+    outline: 5px solid #AF4FFF;
+}
+
 .product-card-title {
     font-family: "Rubik", sans-serif;
     font-weight: bold;
@@ -1084,9 +1160,27 @@ body {
     border: 3px solid #EBEBEB;
 }
 
+.show-more:focus {
+    border: 5px solid #AF4FFF;
+    outline: none;
+}
+
+.show-more:hover {
+    border: 3px solid #000000;
+    outline: none;
+}
+
+.show-more:active {
+    border: 3px solid #000000;
+    opacity: 0.3;
+    outline: none;
+}
+
 .show-more-text {
     font-weight: 800;
     font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
 }
@@ -1119,13 +1213,21 @@ body {
 }
 
 .pagintation-prev {
-    color: #000000;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .pagintation-next {
-    color: #000000;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .pagintation-number {
