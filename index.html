@@ -16,17 +16,15 @@
 
     <div class="header-top">
       <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
-        <a class="header-link header-search" href="#">
-          <svg class="search-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <label class="header-search-label">
+          <svg class="header-search search-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z"
               fill="black" />
           </svg>
-        </a>
-        <label class="header-search-label">
-          <input class="header-search-input" type="text" name="search" placeholder="Поиск по сайту">
         </label>
-        <a class="header-link header-search-button" href="#">Найти</a>
+        <input class="header-search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+        <button class="header-search-button" href="#">Найти</button>
       </form>
 
       <a class="header-link header-login" href="#">
@@ -61,13 +59,8 @@
 
     <nav class="navigation-main">
       <div class="navigation-catalog">
-        <a class="navigation-link catalog-link" href="catalog.html">Каталог товаров</a>
+        <a class="catalog-link" href="#">Каталог товаров</a>
         <a class="navigation-button">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3">
-              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
-            </g>
-          </svg>
           <span class="visually-hidden">Плюс</span>
         </a>
       </div>
@@ -109,7 +102,7 @@
         <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
           лазером, замаскированным под стандартную камеру.</p>
         <div class="advantages-pagination">
-          <a class="button advantages-button" href="#">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-current">
@@ -191,13 +184,13 @@
         <h2 class="visually-hidden" hidden>Услуги</h2>
         <ul class="services-list">
           <li class="services-item delivery">
-            <button class="button" type="button">Доставка</button>
+            <button class="button services-button current-button" type="button">Доставка</button>
           </li>
           <li class="services-item garanty">
-            <button class="button" type="button">Гарантия</button>
+            <button class="button services-button" type="button">Гарантия</button>
           </li>
           <li class="services-item credit">
-            <button class="button" type="button">Кредит</button>
+            <button class="button services-button" type="button">Кредит</button>
           </li>
         </ul>
 
@@ -250,7 +243,7 @@
             </li>
           </ul>
 
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="button company-button" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -270,7 +263,7 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button" href="#">Напишите нам</a>
+          <a class="button company-button" href="#">Напишите нам</a>
         </section>
       </div>
     </section>
@@ -314,7 +307,7 @@
 
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="navigation-list footer-social-name">
+        <ul class="navigation-list footer-navigation-list">
           <li class="navigation-item">
             <a class="navigation-link">Доставка</a>
           </li>
