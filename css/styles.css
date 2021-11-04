@@ -1055,16 +1055,26 @@ body {
   font-style: normal;
   font-size: 16px;
   margin: 0;
-  padding-bottom: 53px;
+  margin-bottom: 53px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .phone-text:focus-within {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   border-radius: 25px;
 }
 
 .footer-phone-number:focus {
   outline: none;
+}
+
+.phone-text:hover, .phone-text:hover .footer-phone-number {
+  color:#ffc700;
+}
+
+.phone-text:active {
+  opacity: 0.3;
 }
 
 .footer-phone {
@@ -1081,6 +1091,10 @@ body {
   text-decoration: none;
   text-decoration-line: underline;
   color: #ffffff;
+}
+
+.htmlacademy-link {
+  padding: 10px;
 }
 
 .htmlacademy-link:focus {
