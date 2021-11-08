@@ -114,7 +114,7 @@
               <a class="subcatalog-link" href="">Квадрокоптеры</a>
             </li>
           </ul>
-          <a class="navigation-button" href="#">
+          <a class="navigation-button">
             <span class="visually-hidden">Плюс</span>
           </a>
         </div>
@@ -131,13 +131,13 @@
           </li>
         </ul>
       </nav>
+    </div>
   </header>
 
   <main class="main-container main-index">
     <!-- Слайдер -->
     <div class="slider-container">
-      <section class="gallery">
-        <h2 class="visually-hidden">Слайдер</h2>
+      <div class="gallery">
         <div class="slider-wrapper">
           <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
           <div class="slider-controls">
@@ -149,10 +149,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages">
         <div class="slider-number">
           <img src="images/01.svg" alt="01" width="250" height="135">
         </div>
@@ -181,15 +180,15 @@
         </div>
         <ul class="slider-characteristics">
           <li class="slider-characteristics-item">
-            <p class="slider-characteristics-range">800 м</p>
-            <p class="slider-characteristics-name">Дальность полета</p>
+            <span class="slider-characteristics-range">800 м</span>
+            <span class="slider-characteristics-name">Дальность полета</span>
           </li>
           <li class="slider-characteristics-item">
-            <p class="slider-characteristics-range">50 м</p>
-            <p class="slider-characteristics-name">Радиус поражения</p>
+            <span class="slider-characteristics-range">50 м</span>
+            <span class="slider-characteristics-name">Радиус поражения</span>
           </li>
         </ul>
-      </section>
+      </div>
     </div>
 
     <!-- Категории -->
@@ -238,8 +237,7 @@
     <!-- Услуги -->
     <section class="services">
       <div class="services-container">
-        <!-- временно добавим атрибут hidden, чтобы заголовок не рушил сетку -->
-        <h2 class="visually-hidden" hidden>Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item delivery">
             <button class="button services-button current-button" type="button">Доставка</button>
@@ -252,19 +250,40 @@
           </li>
         </ul>
 
-        <div class="services-delivery">
-          <h2 class="delivery-title">Доставка</h2>
-          <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
-            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <div class="tab-content">
+          <div>
+            <h2 class="tab-content-title">Доставка</h2>
+            <p class="tab-content-text">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <img class="tab-content-image" src="./images/delivery.svg" alt="Доставка" width="136" height="164">
         </div>
 
-        <img class="delivery-image" src="./images/delivery.svg" alt="Доставка" width="136" height="164">
+        <div class="tab-content tab-container-close">
+          <div>
+            <h2 class="tab-content-title">Гарантия</h2>
+            <p class="tab-content-text">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </div>
+          <img class="tab-content-image" src="./images/garanty.svg" alt="Доставка" width="136" height="164">
+        </div>
+
+        <div class="tab-content tab-container-close">
+          <div>
+            <h2 class="tab-content-title">Кредит</h2>
+            <p class="tab-content-text">Залезть в долговую яму стало проще! Кредитные консультанты 
+              подберут для вас наиболее выгодные условия кредита. Выгодные для банка, 
+              разумеется.</p>
+          </div>
+          <img class="tab-content-image" src="./images/credit.svg" alt="Доставка" width="136" height="164">
+        </div>      
       </div>
     </section>
 
     <!-- О компании -->
-    <section class="company">
+    <div class="company">
       <div class="company-title-container" tabindex="0">
         <div class="company-image-container">
           <img class="company-image" src="./images/order.svg" alt="Заказ" width="47" height="31">
@@ -280,51 +299,51 @@
           <span class="visually-hidden">Дополнительная информация</span>
         </button>
       </div>
+    </div>
 
-      <div class="company-container">
-        <section class="about">
-          <h2 class="about-title">О нас</h2>
-          <p class="about-text">Огромный выбор гаджетов не оставит равнодушным
-            гика, который есть в каждом из нас.</p>
-          <p class="about-text">Мы можем доставить ваш товар в самые отдалённые
-            уголки России транспортными компаниями:</p>
+    <div class="company-container">
+      <section class="about">
+        <h2 class="about-title">О нас</h2>
+        <p class="about-text">Огромный выбор гаджетов не оставит равнодушным
+          гика, который есть в каждом из нас.</p>
+        <p class="about-text">Мы можем доставить ваш товар в самые отдалённые
+          уголки России транспортными компаниями:</p>
 
-          <ul class="about-list">
-            <li class="about-item">
-              <p class="about-name">Меловые линии</p>
-            </li>
-            <li class="about-item">
-              <p class="about-name">СДИК</p>
-            </li>
-            <li class="about-item">
-              <p class="about-name">ТоксБерри</p>
-            </li>
-          </ul>
+        <ul class="about-list">
+          <li class="about-item">
+            <p class="about-name">Меловые линии</p>
+          </li>
+          <li class="about-item">
+            <p class="about-name">СДИК</p>
+          </li>
+          <li class="about-item">
+            <p class="about-name">ТоксБерри</p>
+          </li>
+        </ul>
 
-          <a class="button company-button" href="#">Подробнее о нас</a>
-        </section>
+        <a class="button company-button" href="#">Подробнее о нас</a>
+      </section>
 
-        <section class="contacts">
-          <h2 class="contacts-title">Контакты</h2>
-          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
-            Заодно, сможете проверить работоспособность покупки.</p>
+      <section class="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
+          Заодно, сможете проверить работоспособность покупки.</p>
 
-          <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-          <address class="contacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки,
-              5, литера П.</p>
-            <a class="contacts-address-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-          </address>
+        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки,
+            5, литера П.</p>
+          <a class="contacts-address-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        </address>
 
-          <h3 class="contacts-subtitle">Время работы</h3>
-          <ul class="contacts-schedule">
-            <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-            <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-          </ul>
-          <a class="button company-button" href="#">Напишите нам</a>
-        </section>
-      </div>
-    </section>
+        <h3 class="contacts-subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="button company-button" href="#">Напишите нам</a>
+      </section>
+    </div>
 
     <!-- Рассылка -->
     <section class="newsletter">
@@ -466,7 +485,7 @@
     </div>
   </footer>
 
-  <!-- <div class="modal-container modal-container-close">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-delivery">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -500,7 +519,7 @@
         <button class="button" type="submit">Отправить</button>
       </section>
     </div>
-  </div> -->
+  </div>
 </body>
 
 </html>
