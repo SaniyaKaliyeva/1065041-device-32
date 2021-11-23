@@ -124,6 +124,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   width: 534px;
+  position: relative;
 }
 
 .header-link {
@@ -138,19 +139,25 @@ body {
 }
 
 .header-search {
-  margin-right: 20px;
-  padding-left: 16px;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-search-input {
   width: 320px;
   background: #ffe17f;
-  border: none;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  opacity: 0.3;
+  padding-left: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .header-search-input:active ~ .header-search-button {
@@ -167,29 +174,26 @@ body {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 11px;
-  outline: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 0 20px 20px 0;
   background: #ffe17f;
   border: none;
+  border-left: 2px solid transparent;
 }
 
 .header-search-button:hover {
   background-color: #000000;
   color: #ffffff;
-  border-radius: 0 20px 20px 0;
 }
 
-.header-form:focus .header-search-button {
-  outline: 2px solid #af4fff;
-  box-sizing: border-box;
-  border-radius: 0 20px 20px 0;
+.header-search-input:focus + .header-search-button {
+  border-left-color: #af4fff;
+  visibility: visible;
+  color: transparent;
 }
 
-.header-form:active .header-search-button {
-  outline: 2px solid #000000;
-  box-sizing: border-box;
-  border-radius: 0 20px 20px 0;
+.header-search-input:active + .header-search-button {
+  border-left-color: #000000;
 }
 
 .header-search-button:active {
@@ -198,18 +202,14 @@ body {
   border-radius: 0 20px 20px 0;
 }
 
-.header-form:hover .header-search-input::placeholder {
+.header-search-input:hover::placeholder {
   color: #444444;
 }
 
-.header-form:focus-within {
-  outline: 2px solid #af4fff;
-  border-radius: 20px;
+.header-search-input:focus {
+  border-color: #af4fff;
+  border-radius: 20px 0 0 20px;
 }
-
-/* .header-search-input:focus-within ~ .header-search-button {
-  visibility: visible;
-} */
 
 .header-search-input:focus-within {
   outline: 2px solid #000000;
@@ -217,10 +217,12 @@ body {
 
 .header-search-input:not(:placeholder-shown) ~ .header-search-button {
   visibility: visible;
+  border-left-color: #000000;
 }
 
 .header-form:placeholder-shown {
-  outline: 2px solid rgb(0, 0, 0);
+  border-color: #000000;
+  border-radius: 20px;
 }
 
 .header-search:focus,
@@ -228,12 +230,6 @@ body {
 .header-search-button:focus {
   outline: none;
 }
-
-/* .header-form:not(:placeholder-shown) {
-  outline: 2px solid #000000;
-  border-radius: 20px;
-  visibility: visible;
-} */
 
 .header-login {
   width: 117px;
