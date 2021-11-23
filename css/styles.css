@@ -146,8 +146,7 @@ body {
 }
 
 .header-search-input {
-  width: 322px;
-  margin-right: -2px;
+  width: 100%;
   background: #ffe17f;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -156,10 +155,10 @@ body {
   padding-left: 52px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 170px;
   height: 40px;
   border: 2px solid transparent;
   box-sizing: border-box;
-  z-index: 1;
 }
 
 .header-search-input:active ~ .header-search-button {
@@ -167,12 +166,15 @@ body {
 }
 
 .header-search-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   visibility: hidden;
-  width: 162px;
-  margin-left: -2px;
+  width: 160px;
   display: flex;
   justify-content: center;
   padding-top: 8px;
@@ -186,13 +188,6 @@ body {
 .header-search-button:hover {
   background-color: #000000;
   color: #ffffff;
-}
-
-.header-search-input:focus + .header-search-button {
-  border-color: #af4fff;
-  border-left-color: transparent;
-  visibility: visible;
-  color: transparent;
 }
 
 .header-search-input:active + .header-search-button {
@@ -211,28 +206,22 @@ body {
 
 .header-search-input:focus {
   border-color: #af4fff;
-  border-right-color: transparent;
-  border-radius: 20px 0 0 20px;
-}
-
-.header-search-input:focus-within {
-  outline: 2px solid #000000;
-}
-
-.header-search-input:not(:placeholder-shown) ~ .header-search-button {
-  visibility: visible;
-  border-left-color: #000000;
-}
-
-.header-form:placeholder-shown {
-  border-color: #000000;
   border-radius: 20px;
+}
+
+.header-search-input:not(:placeholder-shown) {
+  border: 2px solid #000000;
+}
+
+.header-search-input:not(:placeholder-shown) + .header-search-button {
+  border: 2px solid #000000;
+  visibility: visible;
 }
 
 .header-search:focus,
 .header-search-input:focus,
 .header-search-button:focus {
-  outline: none;
+  outline: transparent;
 }
 
 .header-login {
