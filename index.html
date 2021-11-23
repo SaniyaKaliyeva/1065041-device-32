@@ -19,7 +19,7 @@
     <div class="header-top">
       <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="header-search-label">
-          <svg class="header-search search-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+          <svg class="header-search" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Поиск по сайту">
             <path
               d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z"
@@ -375,20 +375,22 @@
 
     <!-- О компании -->
     <div class="company">
-      <div class="company-title-container" tabindex="0">
+      <a class="company-title-container" href="#">
         <div class="company-image-container company-image"></div>
         <h2 class="company-title">Доставим редкий товар под заказ</h2>
-        <a class="circle-button" href="#">
-          <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-            aria-label="Дополнительная информация">
-            <g opacity="0.3">
-              <path d="M2 0H0V2H2V0Z" fill="black" />
-              <path d="M2 4H0V12H2V4Z" fill="black" />
-            </g>
-          </svg>
-          <span class="visually-hidden">Дополнительная информация</span>
-        </a>
-      </div>
+        <div class="delivery-button-container">
+          <button class="delivery-button" type="button">
+            <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Дополнительная информация">
+              <g opacity="0.3">
+                <path d="M2 0H0V2H2V0Z" fill="black" />
+                <path d="M2 4H0V12H2V4Z" fill="black" />
+              </g>
+            </svg>
+            <span class="visually-hidden">Дополнительная информация</span>
+          </button>
+        </div>
+      </a>
     </div>
 
     <div class="company-container">
