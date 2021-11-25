@@ -1388,11 +1388,6 @@ body {
   border-bottom: 3px solid #000000;
 }
 
-/* .newsletter-field:invalid {
-  box-shadow: none;
-  border-bottom: 3px solid #ff3d3d;
-} */
-
 .newsletter-button {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -2286,7 +2281,6 @@ body {
 .sorting-container {
   display: flex;
   align-items: center;
-  /* padding: 25px 140px 25px 72px; */
   padding-top: 22px;
   padding-bottom: 28px;
   padding-left: 72px;
