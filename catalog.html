@@ -17,22 +17,22 @@
 
     <div class="header-top">
       <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="header-search-label">
-          <svg class="header-search search-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Поиск по сайту">
-            <path
-              d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z"
-              fill="black" />
-          </svg>
+        <label class="visually-hidden">
+          Поиск по сайту
         </label>
+        <svg class="header-search" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="Поиск по сайту">
+          <path
+            d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z"
+            fill="black" />
+        </svg>
         <input class="header-search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
         <button class="header-search-button" type="button">Найти</button>
       </form>
 
       <a class="header-link header-user" href="#">
         <svg class="login-icon" width="13" height="12" viewBox="0 0 13 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="ФИО пользователя">
+          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ФИО пользователя">
           <path
             d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z"
             fill="black" />
@@ -42,8 +42,7 @@
       <a class="header-link header-logout" href="#">Выйти</a>
       <a class="header-link header-compare" href="#">
         <svg class="compare-icon" width="10" height="12" viewBox="0 0 10 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="Выйти">
+          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Выйти">
           <path d="M6 0H4V12H6V0Z" fill="black" />
           <path d="M2 4H0V12H2V4Z" fill="black" />
           <path d="M10 3H8V12H10V3Z" fill="black" />
@@ -53,8 +52,7 @@
       <a class="header-link header-basket" href="#">
         <span class="basket-circle">2</span>
         <svg class="basket-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="Корзина">
+          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Корзина">
           <path
             d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
             fill="black" />
@@ -122,7 +120,7 @@
           </li>
         </ul>
         <button class="navigation-button" type="button">
-          <span class="visually-hidden">Плюс</span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
 
@@ -161,7 +159,7 @@
       <div class="catalog-filter">
         <h2 class="catalog-filter-title">Фильтр:</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group range-group">
             <legend class="catalog-filter-subtitle">Стоимость</legend>
             <div class="range">
               <div class="range-scale">
@@ -186,7 +184,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group checkbox-group">
             <legend class="catalog-filter-subtitle">Цвет</legend>
             <label class="control">
               <input class="visually-hidden control-input" type="checkbox" name="black" checked>
@@ -240,7 +238,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group radio-group">
             <legend class="catalog-filter-subtitle">Bluetooth</legend>
             <label class="control">
               <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
@@ -254,7 +252,7 @@
             </label>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </div>
 
@@ -278,6 +276,7 @@
           </a>
         </div>
 
+        <!-- Товары -->
         <div class="product-container">
           <!-- Список товаров -->
           <ul class="product-list">
@@ -318,29 +317,31 @@
         </div>
 
         <!-- Пагинация -->
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-prev" href="#">Назад</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-number" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-number" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-number" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-number" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-number" href="#">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagintation-next" href="#">Вперёд</a>
-          </li>
-        </ul>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-prev" href="#">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-number" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-number" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-number" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-number" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-number" href="#">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagintation-next" href="#">Вперёд</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -415,7 +416,7 @@
         <h2 class="visually-hidden">Телефон</h2>
         <address class="footer-contacts-phone">
           <p class="phone-text">Тел.:
-            <a class="footer-phone-number" href="tel:88128121212">+7(812)812-12-12</a>
+            <a class="footer-phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
           </p>
         </address>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">

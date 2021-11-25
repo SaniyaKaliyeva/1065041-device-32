@@ -192,7 +192,7 @@
       <!-- слайдер 02 -->
       <div class="gallery slider-close">
         <div class="slider-wrapper">
-          <img class="slider-image" src="images/slider-1.png" alt="Товары." width="560" height="560">
+          <img class="slider-image" src="images/slider-2.png" alt="Товары." width="560" height="560">
         </div>
       </div>
 
@@ -201,7 +201,7 @@
           <div class="slider-number">
             <img src="images/02.svg" alt="02." width="250" height="135">
           </div>
-          <p class="slider-text">Худеем правильно!</p>
+          <p class="slider-text">Худеем<br> правильно!</p>
           <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
             пропускать занятия и соблюдать диету.</p>
         </div>
@@ -236,7 +236,7 @@
       <!-- слайдер 03 -->
       <div class="gallery slider-close">
         <div class="slider-wrapper">
-          <img class="slider-image" src="images/slider-1.png" alt="Товары." width="560" height="560">
+          <img class="slider-image" src="images/slider-3.png" alt="Товары." width="560" height="560">
         </div>
       </div>
 
@@ -245,7 +245,7 @@
           <div class="slider-number">
             <img src="images/03.svg" alt="03." width="250" height="135">
           </div>
-          <p class="slider-text">Делай селфи, как Бен Стиллер!</p>
+          <p class="slider-text">Делай селфи,<br> как Бен Стиллер!</p>
           <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
             метров длиной и весом всего 5 кг. </p>
         </div>
@@ -332,18 +332,19 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item delivery">
-            <button class="button services-button current-button" type="button">Доставка</button>
+            <button class="services-button current-button" type="button">Доставка</button>
           </li>
           <li class="services-item garanty">
-            <button class="button services-button" type="button">Гарантия</button>
+            <button class="services-button" type="button">Гарантия</button>
           </li>
           <li class="services-item credit">
-            <button class="button services-button" type="button">Кредит</button>
+            <button class="services-button" type="button">Кредит</button>
           </li>
         </ul>
 
+        <!-- Tab 1 -->
         <div class="tab-content">
-          <div>
+          <div class="tab-main">
             <h2 class="tab-content-title">Доставка</h2>
             <p class="tab-content-text">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь<br>
@@ -352,8 +353,9 @@
           <div class="tab-content-delivery"></div>
         </div>
 
+        <!-- Tab 2 -->
         <div class="tab-content tab-container-close">
-          <div>
+          <div class="tab-main">
             <h2 class="tab-content-title">Гарантия</h2>
             <p class="tab-content-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
@@ -362,8 +364,9 @@
           <div class="tab-content-garanty"></div>
         </div>
 
+        <!-- Tab 3 -->
         <div class="tab-content tab-container-close">
-          <div>
+          <div class="tab-main">
             <h2 class="tab-content-title">Кредит</h2>
             <p class="tab-content-text">Залезть в долговую яму стало проще! Кредитные консультанты
               подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
@@ -419,8 +422,8 @@
 
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
-        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
-          Заодно, сможете проверить работоспособность покупки.</p>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.<br>
+          Заодно сможете проверить работоспособность покупки.</p>
 
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-address">
@@ -590,7 +593,7 @@
           </p>
           <p class="field-group">
             <label for="product-name">Что нужно привезти:</label>
-            <textarea class="delivery-form-field" id="product-name" name="product-name" placeholder="В свободной форме"
+            <textarea class="delivery-form-field textarea-field" id="product-name" name="product-name" placeholder="В свободной форме"
               required></textarea>
           </p>
           <p class="field-group">
@@ -620,7 +623,7 @@
               к провозу багажа.</span>
           </div>
         </form>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button modal-delivery-button" type="submit">Отправить</button>
       </section>
     </div>
   </div>
